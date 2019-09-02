@@ -1,0 +1,53 @@
+.--body {
+  display: flex;
+  flex-direction: column;
+  min-width: 20px;
+  position: relative;
+}
+.--absolute {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.--screen {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.--dim {
+  background-color: rgba(20, 20, 20);
+}
+.--input {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.--input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #999;
+  opacity: 1; /* Firefox */
+  text-transform: none;
+}
+.--input:focus {
+  outline: none;
+}
+.--touchable {
+  cursor: pointer;
+}
+.--touchable * {
+  pointer-events: none;
+}
+.--touchable-frozen * {
+  pointer-events: none;
+}
+.--text {
+  color: inherit;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
