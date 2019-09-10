@@ -6,7 +6,6 @@
  */
 
 import React from "react"
-import PropTypes from "prop-types"
 
 import Header from "./header"
 import Body from "../components/Body"
@@ -15,7 +14,7 @@ import "./layout.css"
 const Layout = ({ children }) => {
   return (
     <>
-      <Body style={{ paddingTop: "80px" }}>
+      <Body>
         <main>{children}</main>
       </Body>
       <Header />
@@ -26,10 +25,6 @@ const Layout = ({ children }) => {
       </footer>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

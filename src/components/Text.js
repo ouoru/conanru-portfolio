@@ -4,6 +4,7 @@ import {
   alignX,
   getLineHeight,
   getFontSize,
+  getFontWeight,
   margins,
 } from "./Standards"
 
@@ -13,6 +14,7 @@ export default function Text(props) {
     align = "",
     color = "black",
     size = "s",
+    weight = "m",
     lineSize = "l",
     lineBreak = false,
     style,
@@ -21,6 +23,7 @@ export default function Text(props) {
 
   const textStyle = {
     fontSize: getFontSize(size),
+    fontWeight: getFontWeight(weight),
     lineHeight: getLineHeight(lineSize),
     textAlign: alignX(align),
     color: palette(color),

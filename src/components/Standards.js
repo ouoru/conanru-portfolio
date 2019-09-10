@@ -59,6 +59,20 @@ export function getFontSize(size) {
   }
 }
 
+export function getFontWeight(weight) {
+  switch (weight) {
+    case "l":
+      return 400
+    case "r":
+      return 500
+    case "sb":
+      return 600
+    case "b":
+    default:
+      return 700
+  }
+}
+
 export function getRadiusPx(size) {
   switch (size) {
     case "s":

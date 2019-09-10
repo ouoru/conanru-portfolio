@@ -11,8 +11,6 @@ import {
 export default function Row(props) {
   const {
     children,
-    padding,
-    desktopSizing,
     radius = "z",
     y = "",
     x = "",
@@ -27,7 +25,6 @@ export default function Row(props) {
   const bodyStyle = {
     justifyContent: alignX(x),
     alignItems: justifyY(y),
-    padding: paddingValues(padding),
     borderRadius: getRadiusPx(radius),
     backgroundColor: bg && palette(bg),
     color: palette(color || "whitish"),
